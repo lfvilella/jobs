@@ -31,3 +31,7 @@
 	"git_url_repositories": "https://github.com/robinson_crusoe"
 }
 ```
+
+# Running the Project:
+
+	$ docker run --rm -it -v $(pwd):/app -w /app -p 8000:8000 python:3.8 /bin/bash -c 'pip install -r requirements.txt && python scicrop-api-test-python.py'
